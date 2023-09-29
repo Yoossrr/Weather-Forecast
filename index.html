@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-sm">
+      <div class="container">
+      <img class="me-2" src="Icons/logo.png" alt="">
+      <a class="navbar-brand text-capitalize fw-bold fs-6" href="#">weather forecast</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item m-2">
+           <a class="nav-link active btn border border-2" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link btn border border-2" href="#">News</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link btn border border-2" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link btn border border-2" href="#">Photos</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link btn border border-2" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+     </div>
+   </nav>
+   <section id="main" class="bg-black">
+    <div class="container">
+      <div class="search-bar position-relative">
+      <form class="d-flex my-2 my-lg-0">
+        <input id="searchCities" onkeyup="searchCity()" class=" border rounded-5 form-control-lg" type="text" placeholder="Find your location...">
+        <button class="position-absolute btn border rounded-5">Find</button>
+      </form>
+      </div>
+      <div class="weather-card row">
+  <div id="weather-card-today" class="col-lg-4 position-relative">
+    <div class="header d-flex">
+    <p id="day1" class="me-auto text-capitalize m-2"></p>
+    <p id="day1-date" class="text-capitalize m-2"></p>
+    </div>
+  <div class=" town-name my-4">
+    <p id="town-name" class="fw-bold ms-3"></p>
+  </div>
+    <div id="first-day">
+  </div>
+  <div>
+    <p id="today-cond" class="condition ms-3"></p>
+  </div>
+  <div id="rain-wind-direction" class="today-condition position-absolute d-flex rounded-start-3">
+  </div>
+  </div>
+  <div id="weather-card-tomorrow" class="col-lg-4">
+    <div class="header d-flex">
+      <p id="day2" class="me-auto text-capitalize m-2"></p>
+      <p id="day2-date" class="text-capitalize m-2"></p>
+    </div>
+    <div id="second-day" class="d-flex flex-column align-items-center">
+    </div>
+  </div>
+  <div id="weather-card-after-tomorrow" class="col-lg-4">
+    <div class="header d-flex">
+      <p id="day3" class="me-auto text-capitalize m-2"></p>
+      <p id="day3-date" class="text-capitalize m-2"></p>
+    </div>
+    <div id="third-day" class="d-flex flex-column align-items-center">
+    </div>
+  </div>
+      </div>
+    </div>
+   </section>
+   <section id="footer">
+    <div class="container">
+    <div class="row h-100">
+      <div class="col-lg-8">
+        <div class="search-bar position-relative mt-5 mb-4">
+          <form class="d-flex my-2 my-lg-0">
+            <input class=" border rounded-5 form-control-lg" type="text" placeholder="Enter your email to subscribe...">
+            <button class="position-absolute btn border rounded-5">Subscribe</button>
+          </form>
+          </div>
+        <p class="fs-6">Copyright 2023 Company name. Designed by Yoossrr. All rights reserved</p>
+      </div>
+      <div class="col-lg-4 d-flex align-items-center justify-content-center h-75">
+        <div class="icon-container d-flex align-items-center justify-content-center me-1"><i class="fa-brands fa-facebook-f fa-lg" style="color: #009ad8"></i></div>
+        <div class="icon-container d-flex align-items-center justify-content-center me-1"><i class="fa-brands fa-twitter fa-lg" style="color: #009ad8"></i></div>
+        <div class="icon-container d-flex align-items-center justify-content-center me-1"><i class="fa-brands fa-google-plus-g fa-lg" style="color: #009ad8"></i></div>
+        <div class="icon-container d-flex align-items-center justify-content-center me-1"><i class="fa-brands fa-pinterest fa-lg" style="color: #009ad8"></i></div>
+      </div>
+    </div>
+  </div>
+   </section>
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

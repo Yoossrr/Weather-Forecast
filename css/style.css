@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color:#1E202B;
+    --light-blue:#009AD8;
+}
+.navbar{
+    background-color: var(--main-color);
+    height: 10%;
+}
+
+.nav-link{
+    color: white !important;
+    padding: 0px 20px !important;
+    border-color: transparent !important;
+    border-radius: 5000px;
+    transition: 0.2s;
+}
+
+.active{
+    border-color: var(--light-blue) !important;
+    color: var(--light-blue) !important;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.nav-link:hover{
+    border-color: var(--light-blue) !important;
+    color: var(--light-blue) !important;
+}
+
+#main{
+    height: 90%;
+    background-image:url(../Icons/forecast5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#main input{
+    margin: 7% 0 7% 0;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 100%;
+}
+.search-bar input{
+    background-color: var(--main-color);
+    width: 100%;
+    border: none !important;
+    color: white;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-bar button{
+    transform: translate(-5%,-50%);
+    width: 10%;
+    right: 0;
+    top: 50%;
+    background-color: var(--light-blue);
+    border: none !important;
+    color: white;
+    transition: none !important;
+}
+.search-bar button:hover{
+    background-color: var(--light-blue);
+    color: white;
+}
+.search-bar button:active{
+    background-color: var(--light-blue) !important;
+    color: white !important;
+}
+
+.weather-card{
+    height: 60%;
+}
+.header{
+    font-size: 14px;
+}
+#weather-card-today .header{
+    border-top-left-radius: 10px;
+    background-color: #2D303D;
+}
+.town-name{
+    font-size: 18px;
+}
+.today-temp{
+    font-size: 90px ;
+    color: white;
+}
+.condition{
+    color: var(--light-blue);
+}
+#weather-card-today{
+    padding: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #323544;
+    color: #BFC1C8;
+}
+#weather-card-tomorrow{
+    padding: 0;
+    background-color: #262936;
+    color: #BFC1C8;
+}
+
+#weather-card-tomorrow .header{
+    background-color: #222530;
+}
+
+#weather-card-after-tomorrow{
+    padding: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #323544;
+    color: #BFC1C8;
+}
+#weather-card-after-tomorrow .header{
+    border-top-right-radius: 10px;
+    background-color: #2D303D;
+}
+
+#footer{
+    height: 35%;
+    background-color: #262936;
+    color: #BFC1C8;
+}
+
+#footer .search-bar button{
+    width: auto;
+    height: 80%;
+}
+#footer .search-bar form{
+height: 25%;
+}
+.icon-container{
+    width: 40px;
+    height: 40px;
+    background-color: #1E202B; /* Background color */
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.icon-container i{
+    transition: 0.3s;
+}
+.icon-container:hover{
+    background-color: #009AD8;
+}
+.icon-container:hover i{
+color: white !important;
+}
+.today-condition{
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.condition-icon{
+    transform: translate(0%,40%);
+    height: 30%;
+}
+.main-temp{
+    height: 30%;
+}
+.other-days-condition-img{
+    width: 15%;
+}
